@@ -1,0 +1,278 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    /* style */
+    margin: 0;
+    font-family: 'Jost';
+    color: #FFFFFF;
+    size: 900px;
+    
+    /* background */
+    background: rgba(43, 44, 58, 1);
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    /* gradient */
+    background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    position: absolute;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 9fr;
+}
+
+/* Top part */
+
+.topnav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Information part of the top*/
+
+.info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;    
+}
+
+.faq {
+    grid-column-start: 1;
+    grid-column-end: 2;    
+}
+
+.supply {
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}
+
+.settings {
+    grid-column-start: 3;
+    grid-column-end: 4;    
+}
+
+/* User info of the top part */
+
+.user {
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}
+
+/* Left side navigation */
+
+.sidenav {
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    grid-row-start: 1;
+    grid-row-end: 3;   
+    display: grid;
+    grid-template-rows: 1fr 99fr;
+}
+
+.logo {
+    grid-row-start: 1;
+    grid-row-end: 2;    
+}
+
+/* Fixed sidenav, full height */
+
+.navigation {
+    grid-row-start: 2;
+    grid-row-end: 3;   
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.navigation a, .programs-btn, .lessons-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.navigation a:hover, .programs-btn:hover, .lessons-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.programs-container, .lessons-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down, .fa-caret-down_1 {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .navigation {padding-top: 15px;}
+    .navigation a {font-size: 18px;}
+}
+
+
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    
+    display: grid;
+    grid-template-rows: 0.7fr 0.7fr;
+}
+
+.weekly_quests {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.weekly_quests_top {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.weekly_items {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.04;
+    border-radius: 6px;
+
+    margin: 5%;
+    
+}
+
+.image1 {
+
+    
+}
+
+.inform1 {
+
+
+    
+}
+
+.bottom1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 20%;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #f1f1f1;
+}
+
+.right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.04;
+    border-radius: 6px;
+
+
+    margin: 5%;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.04;
+    border-radius: 6px;
+
+
+    margin: 5%;
+}
+
+.item4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.04;
+    border-radius: 6px;
+
+
+    margin: 5%;
+}
+
+
+.dayly_quests {
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

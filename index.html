@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+    
+
+</head>
+
+<body>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+        <div class="info">
+            <a class=faq href="page/fqs.html">FAQ</a>
+            <a class=supply href="page/sypply.html">Поддержка</a>
+            <a class=settings href="page/settings.html">Настройки</a>
+        </div>
+
+        <div class="user">
+
+        </div>
+    </div>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <div class="logo">
+            <div class=beeline>
+                <!-- <img src="pulpitrock.jpg" alt="Вид на горы"> -->
+            </div>
+            <a href="#rightlogo">2022</a>
+            <a href="#bottomlogo">BEEINTERNS</a>   
+        </div>
+
+        <div class="navigation">
+            <button class="programs-btn">ПРОГРАММА
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="programs-container">
+                <a href="#part1">ЧАСТЬ 1</a>
+                <a href="#part2">ЧАСТЬ 2</a>
+                <a href="#part3">ЧАСТЬ 3</a>
+            </div>
+            <a href="#mentors">МЕНТОРЫ</a>
+            <button class="lessons-btn">ЛЕКЦИИ
+                <i class="fa fa-caret-down_1"></i>
+            </button>
+            <div class="lessons-container">
+                <a href="#htmlcss">HTML/CSS</a>
+                <a href="#git">GIT</a>
+                <a href="#js">JavaScript</a>
+                <a href="#react">React</a>
+                <a href="#angular">Angular</a>
+                <a href="#data">Data</a>
+            </div>
+            <a href="#rules">ПРАВИЛА ПОСТУПЛЕНИЯ</a>
+            <a href="#news">НОВОСТИ</a>
+            <a href="#feedback">ОБРАТНАЯ СВЯЗЬ</a>
+        </div>
+    </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("programs-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+    <div class="content">
+        <div class="weekly_quests">
+            <div class="weekly_quests_top">
+                <div class="weekly_quests_top_left">
+                    <h6 class="basic_level">Базвый уровень</h6>
+                    <h5 class="basic_level_1">HTML/CSS</h6>
+                </div>
+                <div class="weekly_quests_top_right">
+                    <!-- Сделать кнопки -->
+                </div>
+            </div>
+
+            <div class="weekly_items">
+                <div class="item1">
+                    <div class="image1">
+                        <img src="pic1.png" alt="что-то написать">
+                    </div>
+                    <div class="inform1">
+                        <h5>Структура HTML</h5>
+                        <a>Назначение блоков: head, body</a>
+                    </div>
+                    <div class="bottom1">
+                        <div class="left">
+                            <a>01.02.2022</a>
+                        </div>
+                        <div class="right">
+                            <button>Смотреть</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item2">
+                    <div class="image2">
+                        <img src="pic2.png" alt="что-то написать">
+                    </div>
+                    <div class="info2">
+                        <h5>Подключение стилей</h5>
+                        <a>Виды подключения стилей.</a>
+                        <a>Подключение шрифтов</a>
+                    </div>
+                    <div class="bottom2">
+                        <a>03.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+
+                <div class="item3">
+                    <div class="image3">
+                        <img src="pic3.png" alt="что-то написать">
+                    </div>
+                    <div class="info3">
+                        <h5>CSS</h5>
+                        <a>Базовый синтаксис CSS:</a>
+                        <a>селекторы, классы</a>
+                    </div>
+                    <div class="bottom3">
+                        <a>08.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+
+                <div class="item4">
+                    <div class="image4">
+                        <img src="pic4.png" alt="что-то написать">
+                    </div>
+                    <div class="info4">
+                        <h5>Наследие и каскад</h5>
+                        <a>Наследие и каскад</a>
+                    </div>
+                    <div class="bottom4">
+                        <a>10.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dayly_quests">
+            <div class="dayly_quests_top">
+                <div class="dayly_quests_top_left">
+                    <h6 class="basic_level">Продвинутый уровень</h6>
+                    <h5 class="basic_level_1">HTML/CSS</h6>
+                </div>
+                <div class="dayly_quests_top_right">
+                    <!-- Сделать кнопки -->
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="image">
+                        <!-- Добавить картинку -->
+                    </div>
+                    <div class="info">
+                        <h5>HTML-формы</h5>
+                        <a>HTML-формы</a>
+                    </div>
+                    <div class="bottom">
+                        <a>01.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <!-- Добавить картинку -->
+                    </div>
+                    <div class="info">
+                        <h5>Flex</h5>
+                        <a>Принципы современной верстки сайта на flex</a>
+                    </div>
+                    <div class="bottom">
+                        <a>03.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <!-- Добавить картинку -->
+                    </div>
+                    <div class="info">
+                        <h5>Media и viewport</h5>
+                        <a>Адаптивная верстка.</a>
+                        <a>Использование media и viewport</a>
+                    </div>
+                    <div class="bottom">
+                        <a>08.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <!-- Добавить картинку -->
+                    </div>
+                    <div class="info">
+                        <h5>CSS Grid</h5>
+                        <a>CSS Grid</a>
+                    </div>
+                    <div class="bottom">
+                        <a>10.02.2022</a>
+                        <button>Смотреть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
